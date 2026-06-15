@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Palette
+  Rich Black        #02021A  → HSL 240 80% 6%
+  Dark Green        #032221  → HSL 178 83% 8%
+  Bangladesh Green  #03624C  → HSL 164 93% 20%
+  Mountain Meadow   #2CC295  → HSL 162 63% 46%
+  Caribbean Green   #00DF81  → HSL 152 100% 44%
+  Anti-Flash White  #F1F7F6  → HSL 168 30% 96%
+  Mint              #2FA98C  → HSL 163 55% 42%
+  Pistachio         #AACBC4  → HSL 172 23% 73%
+*/
+
+@layer base {
+  :root {
+    /* Light body theme */
+    --background: 168 30% 96%;        /* #F1F7F6 */
+    --foreground: 240 80% 6%;         /* #02021A */
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 80% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 80% 6%;
+
+    --primary: 152 100% 44%;          /* #00DF81 Caribbean Green */
+    --primary-foreground: 240 80% 6%; /* dark text on bright green */
+
+    --secondary: 162 63% 46%;         /* #2CC295 Mountain Meadow */
+    --secondary-foreground: 240 80% 6%;
+
+    --muted: 172 23% 88%;
+    --muted-foreground: 172 23% 40%;
+
+    --accent: 163 55% 42%;            /* #2FA98C Mint */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 172 23% 85%;            /* soft Pistachio tint */
+    --input: 172 23% 85%;
+    --ring: 152 100% 44%;
+
+    --radius: 0.75rem;
+
+    /* Brand tokens (used directly via CSS) */
+    --brand-rich-black: #02021A;
+    --brand-dark-green: #032221;
+    --brand-bangladesh: #03624C;
+    --brand-meadow: #2CC295;
+    --brand-caribbean: #00DF81;
+    --brand-white: #F1F7F6;
+    --brand-mint: #2FA98C;
+    --brand-frog: #17876D;
+    --brand-forest: #095544;
+    --brand-pine: #0B453A;
+    --brand-pistachio: #AACBC4;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    margin: 0;
+    min-width: 320px;
+    font-family: "Plus Jakarta Sans Variable", "Plus Jakarta Sans", system-ui, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Dark section utility — hero, CTA, footer */
+@layer utilities {
+  .section-dark {
+    background-color: var(--brand-rich-black);
+    color: var(--brand-white);
+  }
+
+  .section-dark-green {
+    background-color: var(--brand-dark-green);
+    color: var(--brand-white);
+  }
+
+  .section-mid {
+    background-color: var(--brand-bangladesh);
+    color: var(--brand-white);
+  }
+
+  .text-brand {
+    color: var(--brand-caribbean);
+  }
+
+  .bg-brand {
+    background-color: var(--brand-caribbean);
+    color: var(--brand-rich-black);
+  }
+
+  .btn-brand {
+    background-color: var(--brand-caribbean);
+    color: var(--brand-rich-black);
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-brand:hover {
+    background-color: var(--brand-meadow);
+  }
+
+  /* Dot grid overlay for dark sections */
+  .dot-grid {
+    background-image: radial-gradient(circle, rgba(0, 223, 129, 0.12) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  /* Subtle noise texture */
+  .noise {
+    position: relative;
+  }
+  .noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  /* Glass card on dark background */
+  .glass-card {
+    background: rgba(3, 34, 33, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 223, 129, 0.12);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(0, 223, 129, 0.35);
+    background: rgba(3, 34, 33, 0.8);
+  }
+
+  /* Green glow effect */
+  .glow-green {
+    box-shadow: 0 0 40px -8px rgba(0, 223, 129, 0.3);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #00DF81 0%, #2CC295 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Diagonal clip for section transitions */
+  .clip-diagonal-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  }
+
+  .clip-diagonal-top {
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -1px;
+  }
+}

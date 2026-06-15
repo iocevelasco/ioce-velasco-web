@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="orb1" cx="80%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#00DF81" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#02021A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="15%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#03624C" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#02021A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="1" fill="#00DF81" opacity="0.12"/>
+    </pattern>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DF81"/>
+      <stop offset="100%" stop-color="#2CC295"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#02021A"/>
+  <!-- Dot grid -->
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <!-- Orbs -->
+  <rect width="1200" height="630" fill="url(#orb1)"/>
+  <rect width="1200" height="630" fill="url(#orb2)"/>
+
+  <!-- Left accent bar -->
+  <rect x="80" y="120" width="4" height="200" rx="2" fill="url(#textGrad)"/>
+
+  <!-- Badge -->
+  <rect x="96" y="120" width="360" height="32" rx="16" fill="#03624C" opacity="0.5"/>
+  <text x="116" y="141" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#00DF81" letter-spacing="1">
+    6+ años · IA aplicada a negocios
+  </text>
+
+  <!-- Main headline -->
+  <text x="96" y="232" font-family="system-ui, sans-serif" font-size="72" font-weight="700" fill="#F1F7F6" letter-spacing="-2">
+    Tu negocio,
+  </text>
+  <text x="96" y="316" font-family="system-ui, sans-serif" font-size="72" font-weight="700" fill="url(#textGrad)" letter-spacing="-2">
+    vendiendo solo.
+  </text>
+
+  <!-- Subhead -->
+  <text x="96" y="380" font-family="system-ui, sans-serif" font-size="22" fill="#AACBC4">
+    Sitios web y automatización con IA para gimnasios,
+  </text>
+  <text x="96" y="410" font-family="system-ui, sans-serif" font-size="22" fill="#AACBC4">
+    restaurantes y negocios que quieren crecer.
+  </text>
+
+  <!-- CTA pill -->
+  <rect x="96" y="450" width="340" height="54" rx="12" fill="#00DF81"/>
+  <text x="266" y="483" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#02021A" text-anchor="middle">
+    Pide tu diagnóstico gratis →
+  </text>
+
+  <!-- Right: floating metric cards -->
+  <rect x="780" y="140" width="340" height="100" rx="16" fill="#032221" stroke="#00DF81" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="800" y="185" font-family="system-ui, sans-serif" font-size="42" font-weight="700" fill="#00DF81">+30%</text>
+  <text x="800" y="218" font-family="system-ui, sans-serif" font-size="16" fill="#AACBC4">reservas en el primer mes</text>
+
+  <rect x="780" y="260" width="340" height="100" rx="16" fill="#032221" stroke="#00DF81" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="800" y="305" font-family="system-ui, sans-serif" font-size="42" font-weight="700" fill="#00DF81">24/7</text>
+  <text x="800" y="338" font-family="system-ui, sans-serif" font-size="16" fill="#AACBC4">asistente de WhatsApp activo</text>
+
+  <rect x="780" y="380" width="340" height="100" rx="16" fill="#032221" stroke="#00DF81" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="800" y="425" font-family="system-ui, sans-serif" font-size="42" font-weight="700" fill="#00DF81">&lt;24h</text>
+  <text x="800" y="458" font-family="system-ui, sans-serif" font-size="16" fill="#AACBC4">tiempo de respuesta garantizado</text>
+
+  <!-- Brand mark bottom -->
+  <text x="96" y="575" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#F1F7F6" opacity="0.5">
+    <!-- [placeholder: tu nombre o marca] -->
+    ioce.dev
+  </text>
+  <!-- Divider -->
+  <rect x="80" y="540" width="1040" height="1" fill="#03624C" opacity="0.5"/>
+</svg>

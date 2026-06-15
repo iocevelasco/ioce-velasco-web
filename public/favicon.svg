@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#02021A"/>
+  <!-- Letter mark: stylized "i." -->
+  <circle cx="11" cy="9" r="2.5" fill="#00DF81"/>
+  <rect x="9" y="14" width="4" height="11" rx="2" fill="#00DF81"/>
+  <circle cx="22" cy="23" r="2.5" fill="#00DF81"/>
+</svg>
