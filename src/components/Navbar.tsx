@@ -8,7 +8,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet"
 
-const WA_NUMBER = "<NUMERO>"
+const WA_NUMBER = "541121925253"
 
 const links = [
   { label: "Servicios", href: "#servicios" },
@@ -28,7 +28,7 @@ export default function Navbar() {
   }, [])
 
   const waHref = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
-    "Hola, quiero mi diagnóstico gratis para mi negocio."
+    "Hola, quiero mi diagnóstico gratis."
   )}`
 
   return (

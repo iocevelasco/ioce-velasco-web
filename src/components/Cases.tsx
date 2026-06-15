@@ -3,20 +3,12 @@ import { TrendingUp } from "lucide-react"
 
 const cases = [
   {
-    category: "Gimnasio",
+    category: "[placeholder: caso de cliente]",
     emoji: "🏋️",
-    before: "Agendaba clases a mano por DM.",
-    after: "El asistente de WhatsApp llena las clases de prueba solo.",
-    metric: "+30%",
+    before: "Agendaba a mano por DM.",
+    after: "El asistente llena las reservas solo.",
+    metric: "[placeholder: +30%]",
     metricLabel: "de reservas",
-  },
-  {
-    category: "Restaurante",
-    emoji: "🍽️",
-    before: "Pedidos perdidos entre comentarios de Instagram.",
-    after: "Reservas directas desde la web.",
-    metric: "0",
-    metricLabel: "reservas perdidas",
   },
 ]
 

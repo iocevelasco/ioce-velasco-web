@@ -15,13 +15,11 @@ export default function About() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
-            {/* [placeholder: foto o avatar — 400×400 WebP en /public] */}
-            <div
-              className="w-full max-w-xs mx-auto md:mx-0 aspect-square rounded-2xl bg-brand-bangladesh flex items-center justify-center"
-              aria-label="Foto de perfil"
-            >
-              <span className="text-brand-pistachio text-sm">[placeholder: foto]</span>
-            </div>
+            <img
+              src="/profile.jpg"
+              alt="Foto de perfil"
+              className="w-full max-w-xs mx-auto md:mx-0 aspect-square rounded-2xl object-cover"
+            />
           </motion.div>
 
           <motion.div
@@ -36,15 +34,15 @@ export default function About() {
 
             <div className="space-y-4 text-brand-pistachio leading-relaxed">
               <p>
-                Llevo más de 6 años creando productos digitales que la gente
-                realmente usa. Hoy trabajo en IA en la empresa tech más grande
-                de la región, integrando automatización con IA en productos
-                reales junto a equipos de datos, producto y negocio.
+                Llevo 6+ años creando productos digitales que la gente realmente
+                usa. Hoy trabajo en IA en la empresa tech más grande de la
+                región, donde integro machine learning en productos reales junto
+                a equipos de datos, producto y negocio.
               </p>
               <p>
                 Me importa que las cosas funcionen bien: que carguen rápido, que
                 sean fáciles de usar y que cualquier persona pueda acceder a
-                ellas. Ese mismo nivel lo traigo a tu negocio.
+                ellas. Ese mismo nivel lo traigo a tu proyecto.
               </p>
             </div>
           </motion.div>

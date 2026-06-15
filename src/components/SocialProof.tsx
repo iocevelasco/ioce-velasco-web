@@ -1,9 +1,9 @@
 import { motion } from "framer-motion"
 
 const metrics = [
-  { value: "+20", suffix: "", label: "Proyectos entregados" },
-  { value: "100", suffix: "%", label: "Clientes satisfechos" },
-  { value: "<24", suffix: "h", label: "Tiempo de respuesta" },
+  { value: "+[placeholder: 20]", suffix: "", label: "Proyectos entregados" },
+  { value: "Negocios reales", suffix: "", label: "que crecen" },
+  { value: "<24", suffix: "h", label: "Respuesta garantizada" },
 ]
 
 export default function SocialProof() {

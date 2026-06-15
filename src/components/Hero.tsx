@@ -2,8 +2,7 @@ import { motion } from "framer-motion"
 import { ArrowRight, Sparkles, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const WA_NUMBER = "<NUMERO>"
-const EMAIL = "<EMAIL>"
+const WA_NUMBER = "541121925253"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -18,7 +17,7 @@ const trust = ["Sin contratos largos", "Entrega en 2–4 semanas", "Soporte incl
 
 export default function Hero() {
   const waHref = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
-    "Hola, quiero mi diagnóstico gratis para mi negocio."
+    "Hola, quiero mi diagnóstico gratis."
   )}`
 
   return (
@@ -53,7 +52,7 @@ export default function Hero() {
             <motion.div variants={fadeUp} custom={0} className="mb-6">
               <span className="inline-flex items-center gap-2 rounded-full border border-brand-bangladesh bg-brand-bangladesh/20 px-4 py-1.5 text-xs font-semibold text-brand-caribbean">
                 <Sparkles className="h-3 w-3" aria-hidden />
-                6+ años creando productos digitales · IA aplicada a tu negocio
+                6+ años desarrollando software · IA aplicada cuando suma
               </span>
             </motion.div>
 
@@ -62,9 +61,9 @@ export default function Hero() {
               custom={0.1}
               className="text-5xl sm:text-6xl md:text-7xl font-semibold text-brand-white leading-[1.05] mb-6 tracking-tight"
             >
-              Tu negocio,{" "}
-              <span className="gradient-text">vendiendo</span>{" "}
-              solo.
+              La web o app que{" "}
+              <span className="gradient-text">tu negocio</span>{" "}
+              necesita.
             </motion.h1>
 
             <motion.p
@@ -72,8 +71,8 @@ export default function Hero() {
               custom={0.2}
               className="text-lg text-brand-pistachio leading-relaxed mb-8 max-w-lg"
             >
-              Sitios web y automatización con IA para gimnasios, restaurantes y
-              negocios que quieren más clientes y menos trabajo manual.
+              Te construyo webs, apps y automatizaciones —con IA cuando suma—.
+              Me adapto a lo que necesitas, sin plantillas ni paquetes rígidos.
             </motion.p>
 
             <motion.ul
@@ -107,13 +106,6 @@ export default function Hero() {
                   />
                 </a>
               </Button>
-
-              <a
-                href={`mailto:${EMAIL}`}
-                className="text-sm text-brand-pistachio/70 hover:text-brand-caribbean transition-colors underline underline-offset-4"
-              >
-                o escríbeme por email
-              </a>
 
               <p className="text-xs text-brand-pistachio/40 mt-0.5">
                 Gratis · 15 min por WhatsApp · sin compromiso

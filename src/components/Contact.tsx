@@ -16,8 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 
-const WA_NUMBER = "<NUMERO>"
-const EMAIL = "<EMAIL>"
+const WA_NUMBER = "541121925253"
 
 const REQUIRED_MSG = "Necesito este dato para responderte."
 const WA_INVALID_MSG = "Escribe un número de WhatsApp válido (con código de país)."
@@ -36,7 +35,7 @@ type FormValues = z.infer<typeof schema>
 
 export default function Contact() {
   const waHref = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
-    "Hola, quiero mi diagnóstico gratis para mi negocio."
+    "Hola, quiero mi diagnóstico gratis."
   )}`
 
   const form = useForm<FormValues>({
@@ -72,11 +71,11 @@ export default function Contact() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-brand-white leading-tight mb-4">
-              ¿Listo para que tu negocio trabaje solo?
+              ¿Empezamos?
             </h2>
             <p className="text-brand-pistachio leading-relaxed mb-8">
-              Pide tu diagnóstico gratis: en 15 minutos te digo 3 cosas que
-              podrías automatizar esta semana.
+              Pide tu diagnóstico gratis: en 15 minutos te digo por dónde
+              empezar y qué podrías mejorar.
             </p>
 
             <div className="flex flex-col items-start gap-3">
@@ -93,12 +92,6 @@ export default function Contact() {
                   />
                 </a>
               </Button>
-              <a
-                href={`mailto:${EMAIL}`}
-                className="text-sm text-brand-pistachio hover:text-brand-caribbean transition-colors underline underline-offset-4"
-              >
-                o escríbeme por email
-              </a>
             </div>
           </motion.div>
 
@@ -138,10 +131,10 @@ export default function Contact() {
                   name="business"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-brand-pistachio text-sm">Tu negocio</FormLabel>
+                      <FormLabel className="text-brand-pistachio text-sm">Tu negocio o proyecto</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="Gym Élite / Restaurante La Plaza"
+                          placeholder="Gym Élite / Estudio Jurídico López"
                           {...field}
                           className="bg-brand-black/50 border-brand-bangladesh text-brand-white placeholder:text-brand-pistachio/40 focus-visible:ring-brand-caribbean"
                         />
@@ -176,11 +169,11 @@ export default function Contact() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-brand-pistachio text-sm">
-                        ¿Qué te gustaría mejorar?
+                        ¿Qué te gustaría hacer?
                       </FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Me gustaría automatizar las reservas..."
+                          placeholder="Me gustaría tener una web o automatizar las reservas..."
                           rows={3}
                           {...field}
                           className="bg-brand-black/50 border-brand-bangladesh text-brand-white placeholder:text-brand-pistachio/40 focus-visible:ring-brand-caribbean resize-none"

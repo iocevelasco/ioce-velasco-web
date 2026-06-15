@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react"
 
-const WA_NUMBER = "<NUMERO>"
+const WA_NUMBER = "541121925253"
 
 const links = [
   { label: "Servicios", href: "#servicios" },
@@ -19,7 +19,7 @@ const socials = [
 
 export default function Footer() {
   const waHref = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
-    "Hola, quiero mi diagnóstico gratis para mi negocio."
+    "Hola, quiero mi diagnóstico gratis."
   )}`
 
   return (
@@ -85,7 +85,7 @@ export default function Footer() {
         <div className="border-t border-brand-bangladesh/30 pt-6">
           <p className="text-xs text-brand-pistachio/60">
             {/* [placeholder: año] [placeholder: tu nombre]. */}
-            © 2024 ioce.dev. Hecho con foco en resultados.
+            © [placeholder: año] [placeholder: tu nombre]. Webs y apps hechas a mano.
           </p>
         </div>
       </div>

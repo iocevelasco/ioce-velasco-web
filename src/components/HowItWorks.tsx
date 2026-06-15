@@ -4,7 +4,7 @@ const steps = [
   {
     number: "01",
     title: "Diagnóstico gratis",
-    description: "Revisamos tu negocio y detectamos qué automatizar primero.",
+    description: "Revisamos lo que necesitas y vemos por dónde empezar.",
   },
   {
     number: "02",

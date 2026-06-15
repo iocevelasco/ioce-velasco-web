@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "¿Cuánto cuesta?",
-    a: "Depende de lo que tu negocio necesite. Por eso el primer paso es el diagnóstico gratis: con eso te doy un precio claro y cerrado, sin sorpresas.",
+    a: "Depende de lo que necesites. Por eso el primer paso es el diagnóstico gratis: con eso te doy un precio claro y cerrado, sin sorpresas.",
   },
   {
     q: "¿Cuánto tarda?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "¿Necesito saber de tecnología?",
-    a: "No. Yo me encargo de todo y te lo explico en simple. Tú solo te ocupas de tu negocio.",
+    a: "No. Yo me encargo de todo y te lo explico en simple.",
   },
   {
     q: "¿Qué pasa después de entregar?",
